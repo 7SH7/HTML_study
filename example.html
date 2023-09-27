@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 25% 30% 0 30%;
+  }
+
+  #container {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  #img {
+    width: 200px;
+    height: 100px;
+    padding: 0 0 0 50px;
+  }
+
+  input[type="text"] {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #sign_in {
+    text-align: center;
+  }
+
+  #submit {
+    background-color: blue;
+    width: 310px;
+    height: 50px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  #footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+  }
+</style>
+
+<!-- class와 div : 고유성 드러낼 땐 div, 그 이외는 class -->
+
+<body>
+  <div id="container">
+    <img id="img" src="./img.png" alt="img" />
+    <!-- form은 서버로 정보 넘기는 등의 활동에 사용! -->
+    <form id="form">
+      <h1 id="sign_in">Please sign in</h1>
+      <input type="text" placeholder="Email address" /> <br>
+      <input type="text" placeholder="Email address" /> <br>
+      <input type="checkbox" /> Remember me <br><br>
+      <input type="submit" id="submit" value="Sign in" />
+    </form>
+  </div>
+  <br>
+  <div id="footer">© 2017-2022</div>
+</body>
+
 </html>
